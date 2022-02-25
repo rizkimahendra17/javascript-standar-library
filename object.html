@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    
+    <script>
+
+        {
+            //object freze dan seal
+
+            const person = {
+            firstName: "Rizki",
+            lasName: "Mahendra"
+        };
+
+        Object.freeze(person);
+        // Object.seal(person);
+
+        person.firstName = "Budi";
+        delete person.lasName;
+
+        console.info(person);
+        }
+
+
+
+        {
+            //object asign
+
+            const target = {
+                firstName: "Rizki"
+            };
+            const source = {
+                lasName: "Mahendra"
+            };
+
+            //ini maksud assign object yang di dalam source bisa kita 
+            //aksess dari target atau kita masukan kedalam target
+
+            Object.assign(target, source);
+            console.info(target);
+            console.info(source);
+
+        }
+
+
+        {
+            //object property name & value
+
+            const person = {
+                firstName: "rizki",
+                lastName: "Mahendra"
+            };
+
+            console.info(Object.values(person));
+            console.info(Object.getOwnPropertyNames(person));
+
+
+        }
+
+    </script>
+
+
+</body>
+</html>
