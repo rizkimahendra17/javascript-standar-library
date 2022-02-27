@@ -1,0 +1,10 @@
+{"firstName":"Rizki","middleName":"Mahendra","lastName":"Budi",
+    "address":{
+        "country":"Indonesia","city":"Pekanbaru"
+        },
+        "hobbies":[
+            "Coding",
+            "Game",
+            "Travelling"
+            ]
+        }
